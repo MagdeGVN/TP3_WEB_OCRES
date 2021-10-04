@@ -12,15 +12,16 @@ const API_URL_ICON = "http://openweathermap.org/img/wn/";
 
 class API_WEATHER{
   constructor(city){
-    // Si la ville n'est pas définit alors la ville par défault est Paris
+    // Si la ville n'est pas définie alors la ville par défault est Paris
     /*if(city === undefined){
       city = "paris";
     }*/
     
     if(!city){
-      city = "paris";
+      city = "Paris";
     }
     this.city = city;
+    document.getElementById('city-name').innerHTML = city;
   }
 
   // Faire la requete à l'API openweathermap
