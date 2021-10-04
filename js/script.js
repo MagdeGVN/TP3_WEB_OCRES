@@ -13,7 +13,7 @@ function start() {
       const data = response.data;
 
       for(let i=0; i<4; i++){
-        // On récupère l'information principal
+      // On récupère l'information principale
       const main = data.list[i].weather[0].main;
       const description = data.list[i].weather[0].description;
       const temp = data.list[i].temp.day;
